@@ -21,6 +21,21 @@
     .product:nth-child(2) .photo{background-image:url('./assets/collection-wedding.png')}
     .product:nth-child(3) .photo{background-image:url('./assets/collection-silver.png')}
     .product:nth-child(4) .photo{background-image:url('./assets/collection-gifts.png')}
+
+    /* Mobile navigation and clearance below the sticky header. */
+    #kolekcija, #prica, #kontakt{scroll-margin-top:120px}
+    @media(max-width:800px){
+      header nav{height:auto;flex-direction:column;gap:8px;padding-top:12px;padding-bottom:6px}
+      .brand{max-width:100%;gap:12px}
+      .monogram{flex-shrink:0}
+      .brand strong{font-size:29px}
+      .brand small{font-size:8px;letter-spacing:1.5px}
+      .links{display:flex;width:100%;justify-content:center;gap:8px}
+      .links li{flex:1;text-align:center}
+      .links a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:4px;font-size:10px;letter-spacing:.5px}
+      .links a:focus-visible{outline:2px solid var(--champagne);outline-offset:2px}
+      #kolekcija, #prica, #kontakt{scroll-margin-top:160px}
+    }
   </style>
 <script type="application/ld+json">
 {
